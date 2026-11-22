@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Midnight Vault — a heist game</title>
+<style>
+  html, body { margin: 0; padding: 0; background: #0a0c13; height: 100%; }
+  body { display: flex; align-items: center; justify-content: center; font-family: sans-serif; }
+  #wrap { text-align: center; }
+  canvas { display: block; width: min(96vw, 960px); height: auto; image-rendering: auto;
+           border: 2px solid #3a4157; background: #1c1f2a; cursor: pointer; }
+  #hint { color: #8b95a8; font-size: 12px; margin-top: 8px; }
+</style>
+</head>
+<body>
+<div id="wrap">
+  <canvas id="game" width="960" height="600"></canvas>
+  <div id="hint">The Midnight Vault — WASD move · E crack vault · Space dash · P pause · M mute</div>
+</div>
+<script type="module" src="./src/main.js"></script>
+</body>
+</html>
